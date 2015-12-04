@@ -26,7 +26,7 @@ int main()
     }
     if(P == 1)
     {
-      cout << i << endl;
+      cout << i << " is prime." << endl;
       sum = sum + i;
     }
   }
