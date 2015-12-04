@@ -5,15 +5,15 @@ using namespace std;
 
 int main()
 {
-  int i, j, n;
-  int P, sum;
+  long i, j, n;
+  long P, sum;
 
-  printf("Please enter threshold for prime number summation\n");
+  cout << "Please enter threshold for prime number summation\n";
   cin >> n;
   i = 0;
   sum = 0;
 
-  for(i=0; i < n; i ++)
+  for(i=2; i < n; i ++)
   {
     P = 1;
     for(j = 2; j < i; j ++)
