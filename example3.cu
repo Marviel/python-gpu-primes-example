@@ -54,17 +54,20 @@ int main(void)
     //   printf("Max error: %fn", maxError);
 
 
+    printf("y==============\n")
     for(int j = 2; j < i; j ++)
     {
+      printf("%d, ",y[j])
       if(y[j] == 0)
       {
         P = 0;
         break;
       }
     }
+    printf("\n")
     if(P == 1)
     {
-      printf("Prime: %d",i);
+      printf("Prime: %d  ",i);
       sum = sum + i;
     }
   }
