@@ -64,7 +64,7 @@ int main(void)
     }
     if(P == 1)
     {
-      printf("Prime: %f"%(i));
+      printf("Prime: %d",i);
       sum = sum + i;
     }
   }
