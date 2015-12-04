@@ -20,6 +20,13 @@ int main(void)
   int N = 1<<20;
   int sum;
   int *x, *y, *d_x, *d_y;
+  int P, n;
+
+  n = 1000
+
+  // printf("Please enter threshold for prime number summation\n");
+  // puts(n);
+
   x = (int*)malloc(N*sizeof(int));
   y = (int*)malloc(N*sizeof(int));
 
@@ -34,7 +41,7 @@ int main(void)
   cudaMemcpy(d_x, x, N*sizeof(int), cudaMemcpyHostToDevice);
   cudaMemcpy(d_y, y, N*sizeof(int), cudaMemcpyHostToDevice);
 
-  for(i=0; i < n; i ++)
+  for(int i=0; i < n; i ++)
   {
     P = 1;
 
@@ -47,7 +54,7 @@ int main(void)
     //   printf("Max error: %fn", maxError);
 
 
-    for(j = 2; j < i; j ++)
+    for(int j = 2; j < i; j ++)
     {
       if(y[j] == 0)
       {
