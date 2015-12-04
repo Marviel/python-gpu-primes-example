@@ -4,7 +4,7 @@ __global__
 void saxpy(int n, float a, float *x, float *y)
 {
   int i = blockIdx.x*blockDim.x + threadIdx.x;
-  if (i < n) y[i] = a*x[i] + y[i];
+  if (i < n) y[i] = 10.0f;
 }
 
 int main(void)
@@ -32,6 +32,6 @@ int main(void)
 
   float maxError = 0.0f;
   for (int i = 0; i < N; i++)
-    maxError = max(maxError, abs(y[i]-4.0f));
+    maxError = max(maxError, abs(y[i]));
   printf("Max error: %fn", maxError);
 }

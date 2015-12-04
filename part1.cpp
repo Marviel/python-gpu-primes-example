@@ -8,7 +8,7 @@ int main()
   long i, j, n;
   long P, sum;
 
-  cout << "Please enter threshold for prime number summation\n";
+  cout << "Please enter threshold for prime number summation:"<< endl;
   cin >> n;
   i = 0;
   sum = 0;

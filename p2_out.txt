@@ -1,0 +1,4 @@
+enter number to sum primes to: 
+sum under 1000 is 250001
+time: 0 milliseconds
+
