@@ -22,7 +22,7 @@ int main(void)
   int *x, *y, *d_x, *d_y;
   int P, n;
 
-  n = 1000
+  n = 1000;
 
   // printf("Please enter threshold for prime number summation\n");
   // puts(n);
@@ -64,7 +64,7 @@ int main(void)
     }
     if(P == 1)
     {
-      printf("Prime: %f"%(i))
+      printf("Prime: %f"%(i));
       sum = sum + i;
     }
   }
